@@ -1,0 +1,96 @@
+\documentclass{beamer}
+\usepackage{default}
+\usetheme{Boadilla}
+\useoutertheme{infolines}
+\usecolortheme{tum}
+\usepackage{helvet}
+\usepackage{pdfpcnotes}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{cancel}
+
+
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\definecolor{mygreen}{RGB}{116,167,85}
+\definecolor{myred}{RGB}{188,46,52}
+\definecolor{myblue}{RGB}{65,81,140}
+
+
+
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\addbibresource{literature.bib}
+
+
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage{tikzscale}
+
+
+\usepackage{fixme} 
+
+\let\oldfootnote\footnote
+\renewcommand\footnote[1][]{\oldfootnote[frame,#1]}
+
+%commands
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}{\footnote{{#1}}}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\let\pnote\pnote
+
+\usetikzlibrary{shapes.multipart}
+\tikzstyle{state}=[shape=circle,draw=blue!50,fill=blue!20]
+\tikzstyle{observation}=[shape=rectangle,draw=orange!50,fill=orange!20]
+\tikzstyle{lightedge}=[<-,dotted]
+\tikzstyle{mainstate}=[state,thick]
+\tikzstyle{mainedge}=[<-,thick]
+
+%opening
+
+\title[histoneHMM]{Differential Analysis of Histone Modifications using Hidden Markov Models}
+\subtitle{}
+\date{2016-05-25}
+\author{Gregor Sturm}
+\institute[ICB]{Institute of Computational Biology\\Helmholtz-Zentrum München}
+
+
+\begin{document}
+
+\note{TODO:
+-> emission models
+-> comparing to reference, when identifying peaks }
+
+
+\maketitle
+
+\section{Introduction}
+
+\begin{frame}{Differential analysis helps finding disease-relevant loci.}
+
+Spontaneously Hypertensive Rats (SHR) vs. Brown Norwegian (BN)\\
+\-\hspace{5mm}$\Rightarrow$ ChIP-seq of heart cells
+
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\printbibliography
+\end{frame}
+
+\end{document}
