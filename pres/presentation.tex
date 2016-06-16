@@ -72,27 +72,47 @@
 
 \maketitle
 
-\begin{frame}{Raw data and preprocessing}
-
+\begin{frame}{We extracted fragments from Disprot.}
+\begin{center}
+\includegraphics[width=.7\textwidth]{img/schema_preprocessing.pdf}\newline
+\includegraphics[width=.4\textwidth]{img/disprot_comp.pdf}
+\end{center}
 \end{frame}
 
-\begin{frame}{Short fragments perform better than longer}
-
+\begin{frame}{We performed a parameter optimization on the profile kernel.}
+Optimal combination: $L=1, Y=3$:
+\begin{columns}[t]
+\column{.5\textwidth}{
+\includegraphics[width=\linewidth]{img/mcc25.pdf}}
+\column{.5\textwidth}{
+\pause
+\includegraphics[width=\linewidth]{img/perfs_best.pdf}
+}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Optimal parameters are ...}
-
+\begin{frame}{We tested our method against other approaches.}
+\begin{columns}[t]
+\column{.5\textwidth}{
+\includegraphics[width=\linewidth]{img/mcc_testset.pdf}}
+\column{.5\textwidth}{
+\includegraphics[width=\linewidth]{img/sens_spec_testset.pdf}
+}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Performance on independent test set}
-
+\begin{frame}{Is the amino acid composition driving disorder?}
+\begin{center}
+\includegraphics[width=\textwidth]{img/aacomp.pdf}\newline
+\includegraphics[width=.4\textwidth]{img/aacomp_group.pdf}
+\end{center}
 \end{frame}
 
 
 
-\begin{frame}[allowframebreaks]
-\frametitle{References}
-\printbibliography
-\end{frame}
+%\begin{frame}[allowframebreaks]
+%\frametitle{References}
+%\printbibliography
+%\end{frame}
 
 \end{document}
